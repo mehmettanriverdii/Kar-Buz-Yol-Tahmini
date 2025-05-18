@@ -1,0 +1,1 @@
+model.keras dosyası .gitignore dosyasına eklendi.
