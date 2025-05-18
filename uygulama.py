@@ -53,16 +53,6 @@ class Window(QWidget):
         load_btn.clicked.connect(self.load_image) # resim yukleme butonu
 
         
-        # layout = QVBoxLayout()
-        # layout.addWidget(self.image_label)
-        # layout.addWidget(self.result_label)
-        # layout.addWidget(load_btn)
-        
-        # self.setLayout(layout)
-        
-        
-        
-        
     def load_image(self):
         
         file_path, _ = QFileDialog.getOpenFileName(self, "Resim Seç", "", "Images (*.png *.jpg *.jpeg)")
@@ -89,7 +79,6 @@ class Window(QWidget):
         
         confidence = np.max(result) * 100
         
-        # self.result_label.setText(f"Tahmin: {prediction.upper()} (Güven: %{confidence:.2f})")
         if prediction == "temiz":
             self.result_label.setText(f"Kameramıza yansıyan görüntü temizdir.\nYolda herhangi bir sorun gözükmüyor.\n(Olasılık: %{confidence:.2f})")
             
