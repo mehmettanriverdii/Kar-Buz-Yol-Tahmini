@@ -1,11 +1,9 @@
-import sys
 import os
 from PyQt5.QtWidgets import *
 from PyQt5.QtGui import QPixmap, QFont, QPalette, QBrush,QIcon
 from PyQt5.QtCore import Qt
 import tensorflow as tf
 import numpy as np
-from PIL import Image
 
 MODEL_PATH = os.path.join(os.path.dirname(__file__), "model.keras")
 CLASS_NAME = ["temiz", "hafif karlı", "karlı", "temizlenmiş"]
